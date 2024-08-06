@@ -2,11 +2,11 @@ import React from 'react'
 import './Home.css';
 
 import TranslationInput from '../../components/TranslationInput/TranslationInput';
+import TranslationOuput from '../../components/TranslationOuput/TranslationOuput';
 
 
 import hero from '../../assets/hero_img.jpg';
 import logo from '../../assets/logo.svg';
-import TranslationOuput from '../../components/TranslationOuput/TranslationOuput';
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
           <img src={hero} alt='hero-img' className='hero-img'/>
           <img src={logo} alt='logo' className='logo-img'/>
         </div>
-        <div className='translation-inputs-container'>
+        <div className='translation-containers'>
             <TranslationInput />
             <TranslationOuput />
         </div>

@@ -23,13 +23,18 @@
 .logo-img{
     z-index: 1;
     margin-top: 80px;
+    margin-left: -20px;
 }
 
-.translation-inputs-container{
+.translation-containers{
     position: absolute;
     background-color: none;
     top: 20%;
     left: 0;
     width: 100%;
     height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }

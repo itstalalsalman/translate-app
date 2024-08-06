@@ -1,8 +1,12 @@
 import React from 'react'
+import './TranslationInput.css';
+
 
 const TranslationInput = () => {
   return (
-    <div>TranslationInput</div>
+    <div className='input-container'>
+    
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import './TranslationOuput.css';
 
 const TranslationOuput = () => {
   return (
-    <div>TranslationOuput</div>
+    <div className='output-container'>
+        
+    </div>
   )
 }
 
