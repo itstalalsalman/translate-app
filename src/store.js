@@ -13,10 +13,12 @@ const useStore = create((set) => ({
     setOutputLanguage: (newLanguage) => set(() => ({ outputLanguage: newLanguage })),
     inputText: 'Hello, How are you?',
     setInputText: (newText) => set(() => ({inputText : newText})),
-    setLanguagePair : () => {
+    getLanguagePair : () => {
         const state = useStore.getState();
         return `${state.inputLanguage}|${state.outputLanguage}`;
     },
+    translatedText: '',
+    setTranslatedText: (newText) => set(() => ({translatedText: newText})),
 }));
 
 export default useStore;
