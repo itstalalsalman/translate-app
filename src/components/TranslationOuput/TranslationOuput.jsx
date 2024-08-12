@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './TranslationOuput.css';
 
 import swap from '../../assets/Horizontal_top_left_main.svg';
@@ -9,20 +9,7 @@ import useStore from '../../store';
 
 const TranslationOuput = () => {
 
-  const { inputText, getLanguagePair, translatedText, setTranslatedText } = useStore();
-
-  useEffect(() => {
-    const translateText = async () => {
-      const langPair = getLanguagePair();
-      const response = await fetch(
-        `https://api.mymemory.translated.net/get?q=${inputText}&langpair=${langPair}`
-      );
-      const data = await response.json();
-      setTranslatedText(data.responseData.translatedText);
-    };
-
-    translateText();
-  }, [inputText, getLanguagePair]);
+  const { translatedText } = useStore();
 
   return (
     <div className='output-container'>

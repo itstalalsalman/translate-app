@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './TranslationInput.css';
 
 import LanguageSelect from '../LanguageSelect/LanguageSelect';
@@ -9,7 +9,11 @@ import useStore from '../../store';
 import translateAlpha from '../../assets/Sort_alfa.svg';
 
 const TranslationInput = () => {
-  const { inputText , setInputText } = useStore();
+  const { inputText , setInputText, inputLanguage, outputLanguage, translateText } = useStore();
+
+  useEffect(() => {
+    translateText(inputText, inputLanguage, outputLanguage);
+  }, [inputText, inputLanguage, outputLanguage, translateText]);
 
   const handleChange = (e) => {
     setInputText(e.target.value);
@@ -32,7 +36,7 @@ const TranslationInput = () => {
         </div>
         <div className='translate-btn-container'>
           <SpeakAndCopy isInput={true} />
-          <button className='translate-btn'>
+          <button className='translate-btn' onClick={() => translateText(inputText, inputLanguage, outputLanguage)}>
             <img src={translateAlpha} alt='translate-icon' className='translate-icon'/>
             Translate
           </button>

@@ -9,11 +9,7 @@ const LanguageSelect = ({isInput}) => {
     const selectedLanguage = isInput ? inputLanguage : outputLanguage;
     const setSelectedLanguage = isInput ? setInputLanguage : setOutputLanguage;
 
-    const handleButtonClick = (e) => {
-        setSelectedLanguage(e.target.value);
-    };
-
-    const handleSelectChange = (e) => {
+    const handleClickAndChange = (e) => {
         setSelectedLanguage(e.target.value);
     };
 
@@ -24,14 +20,14 @@ const LanguageSelect = ({isInput}) => {
                 <button 
                     key={lang.initials} 
                     value={lang.initials} 
-                    onClick={handleButtonClick}
+                    onClick={handleClickAndChange}
                     className={selectedLanguage === lang.initials ? 'active' : 'notActive'}
                 >
                 {lang.language}
                 </button>
             )
         )}   
-        <select value={selectedLanguage} onChange={handleSelectChange} className='selectOptions'>
+        <select value={selectedLanguage} onChange={handleClickAndChange} className='selectOptions'>
             {
                 languages.slice(2).map((lang) => (
                     <option key={lang.initials} value={lang.initials}>
