@@ -17,10 +17,11 @@ button, .notActive{
     color: #636e7f;
     font-weight: 700;
     cursor: pointer;
+    transition: background,color 0.3s ease-in;
 }
 .notActive:hover{
     color: #F9FAFB;
-    background-color: hsla(215, 23%, 84%, 0.4);
+    background: hsla(215, 23%, 84%, 0.4);
 }
 
 .active{
@@ -39,6 +40,7 @@ select{
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
+    transition: background,color 0.3s ease-in;;
 }
 
 option{

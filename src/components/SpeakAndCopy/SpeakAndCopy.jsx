@@ -24,8 +24,8 @@ const SpeakAndCopy = ({isInput}) => {
 
   return (
     <div className='speakCopy-container'>
-        <button className='speak-btn' onClick={() => handleSpeech(text, languageToSpeak)}><img src={speak} alt='vol-icon' className='speak-icon' /></button>
-        <button className='copy-btn' onClick={() => handleCopy(text)}><img src={copy} alt='copy-icon' className='copy-icon' /></button>
+        <button className={`speak-btn`} onClick={() => handleSpeech(text, languageToSpeak)}><img src={speak} alt='vol-icon' className='speak-icon' /></button>
+        <button className={`copy-btn`} onClick={() => handleCopy(text)}><img src={copy} alt='copy-icon' className='copy-icon' /></button>
     </div>
   )
 }

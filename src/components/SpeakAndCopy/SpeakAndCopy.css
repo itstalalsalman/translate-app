@@ -16,9 +16,21 @@
     align-items: center;
     border-radius: 13px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.speak-btn:hover, .copy-btn:hover {
+    transform: rotate(45deg);
+    border: 2px solid #CDD5E0;
 }
 
 .speak-icon, .copy-icon{
     width: 60%;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.speak-btn:hover .speak-icon, .copy-btn:hover .copy-icon {
+    transform: rotate(-45deg); /* Keeping the icon fixed in position */
 }
 
