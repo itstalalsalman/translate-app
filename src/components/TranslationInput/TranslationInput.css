@@ -31,6 +31,11 @@
     font-weight: 700;
 }
 
+.btn-styling:hover{
+    color: #F9FAFB;
+    background-color: hsla(215, 23%, 84%, 0.4);
+}
+
 .textInputContainer{
     width: 90%;
     margin-top: 15px;
@@ -78,4 +83,6 @@
     background-color: #3662E3;
     color: #F9FAFB;
     cursor: pointer;
+    border: 1px solid #7CA9F3;
 }
+

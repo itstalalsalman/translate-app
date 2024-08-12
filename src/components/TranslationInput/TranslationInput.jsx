@@ -1,8 +1,11 @@
 import React from 'react'
 import './TranslationInput.css';
+
 import LanguageSelect from '../LanguageSelect/LanguageSelect';
-import useStore from '../../store';
 import SpeakAndCopy from '../SpeakAndCopy/SpeakAndCopy';
+
+import useStore from '../../store';
+
 import translateAlpha from '../../assets/Sort_alfa.svg';
 
 const TranslationInput = () => {

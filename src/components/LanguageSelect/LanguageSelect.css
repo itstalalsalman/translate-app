@@ -7,7 +7,7 @@
     gap: 15px;
 } 
 
-button{
+button, .notActive{
     background: none;
     border: none;
     width: 80px;
@@ -16,7 +16,18 @@ button{
     border-radius: 10px;
     color: #636e7f;
     font-weight: 700;
+    cursor: pointer;
 }
+.notActive:hover{
+    color: #F9FAFB;
+    background-color: hsla(215, 23%, 84%, 0.4);
+}
+
+.active{
+    color: #F9FAFB;
+    background-color: hsla(215, 23%, 84%, 0.4);
+}
+
 
 select{
     width: 80px;
@@ -27,4 +38,15 @@ select{
     color: #636e7f;
     font-size: 15px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+option{
+    background: none;
+    color: black;
+}
+
+select:hover{
+    color: #F9FAFB;
+    background-color: hsla(215, 23%, 84%, 0.4);
 }

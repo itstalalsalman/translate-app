@@ -2,6 +2,7 @@ import React from 'react'
 import './TranslationOuput.css';
 
 import swap from '../../assets/Horizontal_top_left_main.svg';
+
 import LanguageSelect from '../LanguageSelect/LanguageSelect';
 import SpeakAndCopy from '../SpeakAndCopy/SpeakAndCopy';
 
