@@ -33,3 +33,29 @@
 .swapIcon{
     width: 22px;
 }
+
+.outputResults-display{
+    width: 90%;
+    height: 55%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.translatedResult{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F9FAFB;
+    padding-top: 10px;
+}
+
+.speakAndCopy-container{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
