@@ -23,7 +23,7 @@ const useStore = create((set) => ({
         );
         const data = await response.data;
         set({ translatedText: text !== '' ? data.responseData.translatedText : 'Please enter text to be translated...'});
-    }, 1000),
+    }, 500),
 }));
 
 export default useStore;

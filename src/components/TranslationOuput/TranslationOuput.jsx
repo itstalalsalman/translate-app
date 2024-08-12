@@ -9,13 +9,22 @@ import useStore from '../../store';
 
 const TranslationOuput = () => {
 
-  const { translatedText } = useStore();
+  const { translatedText, inputLanguage, setInputLanguage, outputLanguage, setOutputLanguage, inputText, setInputText, translateText } = useStore();
 
+  const handleSwap = () => {
+    if(inputText !== ""){
+      const temp = inputLanguage;
+      setInputLanguage(outputLanguage);
+      setOutputLanguage(temp);
+      setInputText(translatedText);
+    }
+  }
+  
   return (
     <div className='output-container'>
         <div className='selection-container'>
           <LanguageSelect isInput={false} />
-          <button className='btn-swap'><img src={swap} alt='swap' className='swapIcon' /></button>
+          <button className='btn-swap' onClick={handleSwap}><img src={swap} alt='swap' className='swapIcon' /></button>
         </div>
         <div className='outputResults-display'>
           <p className='translatedResult'>
