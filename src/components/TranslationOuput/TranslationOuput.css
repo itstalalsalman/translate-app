@@ -1,7 +1,35 @@
 .output-container{
     width: 40%;
-    height: 350px;
+    height: 370px;
     border-radius: 25px;
     background-color: #121826cc;
     border: 1px solid #4D5562;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.selection-container{
+    width: 90%;
+    height: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.btn-swap{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #636e7f;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.swapIcon{
+    width: 22px;
 }

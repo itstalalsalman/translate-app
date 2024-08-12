@@ -1,0 +1,23 @@
+.speakCopy-container{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.speak-btn, .copy-btn{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #636e7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.speak-icon, .copy-icon{
+    width: 60%;
+}
