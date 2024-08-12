@@ -18,6 +18,7 @@
     justify-content: flex-start;
     align-items: center;
     border-bottom: 2px solid #394150;
+    gap: 10px;
 }
 
 .btn-styling{
@@ -87,3 +88,9 @@
     border: 1px solid #7CA9F3;
 }
 
+
+@media (max-width: 1024px){
+    .input-container{
+        width: 90%;
+    }
+}

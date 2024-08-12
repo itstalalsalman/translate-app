@@ -19,10 +19,10 @@ const TranslationOuput = () => {
       setInputText(translatedText);
     }
   }
-  
+
   return (
     <div className='output-container'>
-        <div className='selection-container'>
+        <div className='selection-outp-container'>
           <LanguageSelect isInput={false} />
           <button className='btn-swap' onClick={handleSwap}><img src={swap} alt='swap' className='swapIcon' /></button>
         </div>
